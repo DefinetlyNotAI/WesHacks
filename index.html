@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- Basic -->
@@ -8,15 +8,12 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="WES-HACK%20WEB/images/favicon.png" type="">
+  <link rel="shortcut icon" href="Website/images/favicon.png" type="">
 
   <title> Wes:Hack </title>
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="WES-HACK%20WEB/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="Website/css/bootstrap.css" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -25,26 +22,26 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- font awesome style -->
-  <link href="WES-HACK%20WEB/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="Website/css/font-awesome.min.css" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="WES-HACK%20WEB/css/style.css" rel="stylesheet" />
+  <link href="Website/css/style.css" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="WES-HACK%20WEB/css/responsive.css" rel="stylesheet" />
+  <link href="Website/css/responsive.css" rel="stylesheet" />
 
 </head>
 
 <body>
 
-  <div class="hero_area">
-
+  <div class="hero_area" style="height: auto; width: auto; padding:0;">
     <div class="hero_bg_box">
       <div class="bg_img_box">
-        <img src="WES-HACK%20WEB/images/hero-bg.png" alt="">
-      </div>
+        <img src="Website/images/hero-bg.png" alt="Hero Background" >
+      </div>      
+
     </div>
 
-    <!-- header section strats -->
+    <!-- header section strategies -->
     <header class="header_section">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg custom_nav-container ">
@@ -55,7 +52,7 @@
           </a>
 
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class=""> </span>
+            <span class="">&#9776;</span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -64,13 +61,19 @@
                 <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="WES-HACK%20WEB/prizes.html"> Prizes</a>
+                <a class="nav-link" href="Website/prizes.html"> Prizes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="WES-HACK%20WEB/venue.html">Venue</a>
+                <a class="nav-link" href="Website/venue.html">Venue</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="WES-HACK%20WEB/schedule.html">Schedule</a>
+                <a class="nav-link" href="Website/schedule.html">Schedule</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Website/sponsors.html">Sponsors</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Website/faq.html">FAQ</a>
               </li>
             </ul>
           </div>
@@ -91,17 +94,20 @@
                       Welcome to WES:HACK 24
                     </h1>
                     <p>
-                      Muwailah's Commercial First ever Student Led Hackathon
+                      Muwailah's First Ever Student-Led Hackathon
                     </p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="img-box">
-                    <img src="WES-HACK%20WEB/images/slider-img.png" alt="">
+                    <img src="Website/images/slider-img.png" alt="">
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
     </section>
     <!-- end slider section -->
   </div>
@@ -146,7 +152,7 @@ const hackathonEndDate = new Date("August 14, 2025 23:59:59").getTime();
 // Update the countdown every second
 const countdownTimer = setInterval(function() {
 const now = new Date().getTime();
-let message = "";
+let message;
 
 // Calculate time between now and theme reveal
 if (now < themeRevealDate) {
@@ -160,7 +166,7 @@ if (now < themeRevealDate) {
   message = `Theme reveal in ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds.`;
 
 } else if (now >= themeRevealDate && now < hackathonStartDate) {
-  message = "The theme is {theme name}! Start Practcing :)!";
+  message = "The theme is {theme name}! Start Practicing :)!";
 
 } else if (now >= hackathonStartDate && now <= hackathonEndDate) {
   message = "The Official Wesgreen Hackathon has begun!";
@@ -199,7 +205,7 @@ if (now > hackathonEndDate) {
         <div class="row">
             <div class="col-md-6">
                 <div class="img-box">
-                    <img src="WES-HACK%20WEB/images/about-img.png" alt="">
+                    <img src="Website/images/about-img.png" alt="" >
                 </div>
             </div>
             <div class="col-md-6">
@@ -219,7 +225,13 @@ if (now > hackathonEndDate) {
 
   <!-- end why section -->
 
-</body>
+  <!-- JavaScript Files (Make sure to include them in this order) -->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
+<!-- Bootstrap JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
+</body>
 </html>
-<!--Designed By Aban Mahood Ahmed -->
