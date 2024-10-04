@@ -148,7 +148,11 @@
       }
 
       try {
-        return document.querySelector(selector) ? selector : null;
+        // Validate the selector to ensure it does not contain potentially harmful characters
+        if (document.querySelector(selector) && /^[a-zA-Z0-9_\-#\.]+$/.test(selector)) {
+          return selector;
+        }
+        return null;
       } catch (err) {
         return null;
       }
@@ -1080,7 +1084,7 @@
           return;
         }
 
-        var target = $(selector)[0];
+        var target = $.find(selector)[0];
 
         if (!target || !$(target).hasClass(ClassName$2.CAROUSEL)) {
           return;
