@@ -29,8 +29,8 @@ To set up the project locally, follow these steps:
 3. Open the `index.html` file in your preferred web browser to view the site.
    
 ## Team
-Founder: Shahm Najeeb
-Co-Founder: Aban Mohammad
+- Founder: Shahm Najeeb
+- Co-Founder: Aban Mohammad
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
