@@ -27,9 +27,10 @@ To set up the project locally, follow these steps:
    cd WesHacks
    ```
 3. Open the `index.html` file in your preferred web browser to view the site.
-
-## Contributing
-We welcome contributions from the community. Please fork the repository and submit pull requests for any improvements or bug fixes.
+   
+## Team
+Founder: Shahm Najeeb
+Co-Founder: Aban Mohammad
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
