@@ -4,6 +4,8 @@
 <head>
     <!-- Basic -->
     <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
     <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
     <!-- Mobile Metas -->
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"/>
@@ -64,6 +66,14 @@
             margin-top: 10px;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const referrer = document.referrer;
+            if (!referrer.includes("volunteers.html")) {
+                window.location.href = "volunteers.html";
+            }
+        });
+    </script>
 </head>
 
 <body class="sub_page">
