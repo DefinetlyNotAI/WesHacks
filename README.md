@@ -17,10 +17,10 @@ The official Hackathon competition website source code for the Muweilah Wesgreen
 WesHacks is a web-based platform designed to manage and display information related to the Muweilah Wesgreen Hackathon. This repository contains the source code for the hackathon's website, focusing on providing participants with up-to-date information, schedules, and resources.
 
 ## Technologies Used
-- HTML (79.9%)
-- SCSS (15.8%)
-- CSS (3.4%)
-- JavaScript (0.9%)
+- HTML (86.9%)
+- SCSS (10.3%)
+- CSS (2.2%)
+- JavaScript (0.6%)
 
 ## Features
 - Event Schedules: Detailed timelines for hackathon events.
