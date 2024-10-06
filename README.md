@@ -6,8 +6,8 @@
     <a href="https://github.com/DefinetlyNotAI/WesHacks/languages"><img src="https://img.shields.io/github/languages/count/DefinetlyNotAI/WesHacks" alt="GitHub Language Count"></a>
     <a href="https://github.com/DefinetlyNotAI/WesHacks/actions"><img src="https://img.shields.io/github/check-runs/DefinetlyNotAI/WesHacks/main" alt="GitHub Branch Check Runs"></a>
     <a href="https://github.com/DefinetlyNotAI/WesHacks"><img src="https://img.shields.io/github/repo-size/DefinetlyNotAI/WesHacks" alt="GitHub Repo Size"></a>
+    <a href="https://github.com/DefinetlyNotAI/WesHacks/actions/workflows/pages/pages-build-deployment"><img src="https://github.com/DefinetlyNotAI/WesHacks/actions/workflows/pages/pages-build-deployment/badge.svg" alt="Pages Build Deployment"></a>
 </div>
-
 ---
 
 The official Hackathon competition website source code for the Muweilah Wesgreen Hackathon.
