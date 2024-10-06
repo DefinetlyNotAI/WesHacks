@@ -41,7 +41,7 @@ To set up the project locally, follow these steps:
    
 ## Team
 - Founder: Shahm Najeeb
-- Co-Founder: Aban Mohammad
+- Co-Founder: Aban Ahmad
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
