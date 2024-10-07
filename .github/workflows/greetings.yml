@@ -20,5 +20,5 @@ jobs:
     - uses: actions/first-interaction@3c71ce730280171fd1cfb57c00c774f8998586f7 # v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Hi! Thanks for pointing out an issue/suggestion for the first time to WesHacks 🤗 We hope it goes as smoothly as possible. This message is from a bot - Shahm Najeeb"
-        pr-message: "Hi! Thanks for contributing for the first time to WesHacks 🤗 We hope it goes as smoothly as possible and appreciate your valuable contribution. This message is from a bot - Shahm Najeeb"
+        issue-message: "Hi! Thanks for pointing out an issue/suggestion for the first time to WesHacks 🤗, We hope it goes as smoothly as possible. This message is from a bot - Shahm Najeeb"
+        pr-message: "Hi! Thanks for contributing for the first time to WesHacks 🤗, We hope it goes as smoothly as possible and appreciate your valuable contribution. This message is from a bot - Shahm Najeeb"
