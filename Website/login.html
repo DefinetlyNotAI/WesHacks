@@ -69,8 +69,8 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const referrer = document.referrer;
-            if (!referrer.includes("volunteers.html")) {
-                window.location.href = "volunteers.html";
+            if (!referrer.includes("volunteers.secret.html")) {
+                window.location.href = "volunteers.secret.html";
             }
         });
     </script>
@@ -115,10 +115,10 @@
                         <a class="nav-link" href="faq.html">FAQ</a>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="volunteers.html">Volunteers <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="volunteers.secret.html">Volunteers <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="team.html">Team</a>
+                        <a class="nav-link" href="volunteers.team.html">Team</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="rules.html">Rules</a>
@@ -165,7 +165,7 @@
             const correctHashedPassword = "36a767619598213a0112d3fc61a047cee20362b348b8e8a88590f6c9d752d052";
             if (hashedPassword === correctHashedPassword) {
                 sessionStorage.setItem('authenticated', 'true');
-                window.location.href = 'volunteers.html';
+                window.location.href = 'volunteers.secret.html';
             } else {
                 $('#errorMessage').show();
             }
