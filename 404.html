@@ -16,10 +16,30 @@
     <h3>UH OH! You're lost.
         <br/>The page you are looking for does not exist.
         How you got here is a mystery. But you can click the button below
-        to go back to the homepage.</h3>
+        to go back to the homepage.
+        <br/><span id="game-text">Want to play a game? Keep refreshing this page, something might change...</span>
+    </h3>
     <br/>
     <a class="button" href="/index.html">Back Home</a>
 </div>
 </body>
+
+<script>
+    const gameText = document.getElementById('game-text');
+    let colorValue = 0;
+    setTimeout(() => {
+        setInterval(() => {
+            colorValue = (colorValue + 1) % 256;
+            gameText.style.color = `rgb(255, ${Math.max(0, 255 - colorValue)}, ${Math.max(0, 255 - colorValue)})`;
+        }, 50);
+    }, 10000);
+    if (Math.random() < 0.05) {
+        const secretButton = document.createElement('a');
+        secretButton.className = 'button';
+        secretButton.href = '/Website/ESCAPE.html';
+        secretButton.textContent = 'Hmm how did this secret button get here?';
+        document.querySelector('.container').appendChild(secretButton);
+    }
+</script>
 
 </html>
