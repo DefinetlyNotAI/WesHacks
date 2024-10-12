@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebResourcesPaths">
+    <contentEntries>
+      <entry url="file://$PROJECT_DIR$">
+        <entryData>
+          <resourceRoots>
+            <path value="file://$PROJECT_DIR$/Website/images" />
+            <path value="file://$PROJECT_DIR$/Website/images/Favicons" />
+            <path value="file://$PROJECT_DIR$/Website/images/Volunteers" />
+            <path value="file://$PROJECT_DIR$/Website/images/Sponsor" />
+            <path value="file://$PROJECT_DIR$/Website/css" />
+            <path value="file://$PROJECT_DIR$/Website/js" />
+            <path value="file://$PROJECT_DIR$/Website/fonts" />
+          </resourceRoots>
+        </entryData>
+      </entry>
+    </contentEntries>
+  </component>
+</project>
