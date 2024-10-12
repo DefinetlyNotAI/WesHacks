@@ -27,7 +27,7 @@ body {
 }
 
 .sponsor-table td {
-    width: 45%; /* Fixed width for table cells */
+    width: 100%; /* Default width for mobile devices */
     padding: 20px;
     vertical-align: top;
     background-color: #fff;
@@ -43,4 +43,10 @@ body {
 
 .sponsor-table p {
     color: #666;
+}
+
+@media (min-width: 768px) {
+    .sponsor-table td {
+        width: 45%; /* Fixed width for table cells on larger screens */
+    }
 }
