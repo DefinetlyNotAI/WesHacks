@@ -1,0 +1,49 @@
+.btn:hover {
+    background-color: #003eff;
+    color: #ffffff;
+    transform: scale(1.1);
+}
+
+.faq-section {
+    padding: 50px 0;
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.heading_center {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.faq-table th,
+.faq-table td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.faq-table th {
+    background-color: #003eff;
+    color: white;
+}
+
+.faq-table td {
+    background-color: #ffffff;
+}
+
+.table-heading {
+    background-color: #f3f3f3;
+    font-weight: bold;
+}

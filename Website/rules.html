@@ -27,65 +27,8 @@
     <link href="css/style.css" rel="stylesheet"/>
     <!-- Responsive style -->
     <link href="css/responsive.css" rel="stylesheet"/>
-
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f0f0f5;
-        }
-
-        .hackathon-rules {
-            padding: 30px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 20px auto;
-            max-width: 900px;
-        }
-
-        h1, h2, h3, h4 {
-            font-weight: 600;
-        }
-
-        h1 {
-            font-size: 32px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        h2, h3, h4 {
-            font-size: 24px;
-            margin-top: 20px;
-            cursor: pointer;
-            padding: 10px;
-            background-color: #34495e;
-            color: #fff;
-            border-radius: 5px;
-            position: relative;
-        }
-
-        h2::after, h3::after, h4::after {
-            content: '\f0dd';
-            font-family: FontAwesome,sans-serif;
-            position: absolute;
-            right: 20px;
-            font-size: 18px;
-            transition: transform 0.3s ease;
-        }
-
-        h2.active::after, h3.active::after, h4.active::after {
-            transform: rotate(180deg);
-        }
-
-        ul {
-            margin-left: 20px;
-        }
-
-        .content {
-            display: none;
-            padding-left: 15px;
-        }
-    </style>
+    <!-- Colors and more Custom styles -->
+    <link href="css/rules.css" rel="stylesheet"/>
 </head>
 
 <body class="sub_page">
@@ -414,8 +357,8 @@
         <ul>
             <li>By participating, you agree to follow the hackathon's rules and guidelines. Failure to comply may lead to disqualification. Contact the organizers with any questions or concerns.</li>
         </ul>
-        <p>Good luck and happy programming!</p>
     </div>
+    <p>Good luck and happy programming!</p>
 </div>
 
 <!-- JavaScript Files -->
@@ -424,16 +367,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
 <!-- Bootstrap JavaScript -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-<script>
-    // Smooth collapsible functionality with slideToggle
-    $(document).ready(function () {
-        $('.hackathon-rules h2, .hackathon-rules h3, .hackathon-rules h4').click(function () {
-            $(this).toggleClass('active');
-            $(this).next('.content').slideToggle(400);
-        });
-    });
-</script>
+<!-- Custom JavaScript -->
+<script src="js/rules.js"></script>
 
 </body>
 

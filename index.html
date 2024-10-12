@@ -180,63 +180,7 @@
 
 <!--end of one of a kind Section-->
 
-<script>
-    // Set the date for the theme reveal
-    const themeRevealDate = new Date("December 1, 2024 00:00:00").getTime();
-    const hackathonStartDate = new Date("December 13, 2024 00:00:00").getTime();
-    const hackathonEndDate = new Date("December 15, 2024 00:00:00").getTime();
-
-    // Update the countdown every second
-    const countdownTimer = setInterval(function () {
-        const now = new Date().getTime();
-        let message;
-        let extraMessage1;
-        let extraMessage2;
-        let useExtraMessage = false;
-
-// Calculate time between now and theme reveal
-        if (now < themeRevealDate) {
-            const timeLeft = themeRevealDate - now;
-
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-            message = `Theme reveal in ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds.`;
-
-        } else if (now >= themeRevealDate && now < hackathonStartDate) {
-            const timeLeft = hackathonStartDate - now;
-
-            const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-            message = `The theme is {theme name}! Start Practicing 🤗!`
-            extraMessage1 = `Competition in ${days} days, ${hours} hours, ${minutes} minutes, and ${seconds} seconds.`
-            extraMessage2 = `Very important, DO NOT finish the project! You wont be allowed to enter the competition if you do. You are allowed to finish the project upto 60% - This will be decided by the organisers.`;
-            useExtraMessage = true;
-
-        } else if (now >= hackathonStartDate && now <= hackathonEndDate) {
-            message = "The Official Wesgreen Hackathon has begun!";
-
-        } else {
-            message = "The Official Wesgreen Hackathon has ended.";
-        }
-
-// Display the message
-        if (useExtraMessage) {
-            document.getElementById("countdown").innerHTML = message + "<br>" + extraMessage1 + "<br>" + "<br>" + extraMessage2 + "<br>";
-        } else {
-            document.getElementById("countdown").innerHTML = message;
-        }
-
-// Stop the timer once the event has ended
-        if (now > hackathonEndDate) {
-            clearInterval(countdownTimer);
-        }
-    }, 1000);
-</script>
+<script src="/Website/js/timer.index.js"></script>
 
 <!-- about section -->
 

@@ -1,0 +1,37 @@
+body {
+    background-color: #00204a;
+}
+
+.about_section {
+    padding: 50px 0;
+}
+
+.img-box {
+    margin-left: 150px; /* Shift image to the left */
+}
+
+.prizes-img {
+    width: 60%; /* Adjust as necessary */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.heading_center {
+    text-align: center;
+}
+
+.detail-box {
+    margin-top: 30px; /* Adjust for spacing */
+}
+
+.detail-box h3 {
+    margin-bottom: 20px; /* Spacing for better layout */
+}
+
+.detail-box ul {
+    list-style-type: none; /* Remove bullet points */
+    padding-left: 0; /* Remove padding */
+}
+
+.detail-box li {
+    margin-bottom: 10px; /* Space between list items */
+}
