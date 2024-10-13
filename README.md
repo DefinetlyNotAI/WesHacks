@@ -21,10 +21,10 @@ information, schedules, and resources.
 
 ## Technologies Used
 
-- HTML (81.0%)
-- SCSS (10.0%)
-- CSS (6.3%)
-- JavaScript (2.7%)
+- HTML (78.8%)
+- SCSS (8.9%)
+- CSS (7.7%)
+- JavaScript (4.6%)
 
 ## Features
 
