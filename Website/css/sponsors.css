@@ -45,6 +45,16 @@ body {
     color: #666;
 }
 
+.hover-expand {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+}
+
+.hover-expand:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 @media (min-width: 768px) {
     .sponsor-table td {
         width: 45%; /* Fixed width for table cells on larger screens */
