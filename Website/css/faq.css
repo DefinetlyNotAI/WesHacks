@@ -1,3 +1,14 @@
+.email-btn {
+    transition: transform 0.3s ease;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 7px;
+}
+
+.email-btn:hover {
+    transform: scale(1.1);
+}
+
 .btn:hover {
     background-color: #003eff;
     color: #ffffff;
