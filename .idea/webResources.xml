@@ -12,6 +12,8 @@
             <path value="file://$PROJECT_DIR$/Website/css" />
             <path value="file://$PROJECT_DIR$/Website/js" />
             <path value="file://$PROJECT_DIR$/Website/fonts" />
+            <path value="file://$PROJECT_DIR$/Website/downloadables" />
+            <path value="file://$PROJECT_DIR$/Website/downloadable" />
           </resourceRoots>
         </entryData>
       </entry>
