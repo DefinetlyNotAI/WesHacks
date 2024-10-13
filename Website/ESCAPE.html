@@ -1,125 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Mysterious Page</title>
-    <style>
-        body {
-            background: black;
-            color: lime;
-            font-family: "Courier New", Courier, monospace;
-            overflow: hidden;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-        }
-
-        .matrix {
-            display: flex;
-            flex-wrap: wrap;
-            width: 80%;
-            height: 60%;
-            position: relative;
-        }
-
-        .matrix .char {
-            width: 20px;
-            height: 20px;
-            animation: flicker 1s infinite;
-        }
-
-        .hidden-message {
-            position: absolute;
-            display: none;
-            font-size: 24px;
-            color: red;
-            text-align: center;
-        }
-
-        @keyframes flicker {
-            0%, 100% {
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-        }
-
-        .ip-address {
-            color: red;
-            font-size: 20px;
-            margin-top: 20px;
-        }
-
-        .location {
-            color: red;
-            font-size: 16px;
-            margin-top: 10px;
-        }
-    </style>
+    <link href="css/ESCAPE.css" rel="stylesheet">
 </head>
 <body>
 <div class="matrix"></div>
 <div class="hidden-message">There is nothing here? What are you afraid of?</div>
-<div class="ip-address" id="ip-address">=)</div>
-<div class="location" id="ip-location"></div>
-<script>
-    const matrix = document.querySelector('.matrix');
-    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    const createChar = () => {
-        const char = document.createElement('div');
-        char.className = 'char';
-        char.textContent = chars.charAt(Math.floor(Math.random() * chars.length));
-        char.style.position = 'absolute';
-        char.style.left = `${Math.floor(Math.random() * 100)}%`;
-        char.style.top = `-${Math.floor(Math.random() * 100)}px`;
-        return char;
-    }
-    for (let i = 0; i < 500; i++) {
-        matrix.appendChild(createChar());
-    }
-    setInterval(() => {
-        document.querySelectorAll('.char').forEach(char => {
-            char.textContent = chars.charAt(Math.floor(Math.random() * chars.length));
-            char.style.top = `${parseInt(char.style.top) + 5}px`;
-            if (parseInt(char.style.top) > window.innerHeight) {
-                char.style.top = `-${Math.floor(Math.random() * 100)}px`;
-            }
-            char.style.color = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`;
-        });
-    }, 50);
-    setTimeout(() => {
-        document.querySelector('.hidden-message').style.display = 'block';
-        setTimeout(() => {
-            fetch('https://api.ipify.org?format=json')
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById('ip-address').textContent = `Maybe you do have to be scared? Is this familiar: ${data.ip}`;
-                })
-                .catch(error => {
-                    document.getElementById('ip-address').textContent = '';
-                    console.error('Error fetching IP address:', error);
-                });
-            // Geolocation API to get user's location
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(position => {
-                    const latitude = position.coords.latitude;
-                    const longitude = position.coords.longitude;
-                    document.getElementById('ip-location').textContent = `Your approximate location is: Latitude ${latitude}, Longitude ${longitude}`;
-                }, error => {
-                    document.getElementById('ip-location').textContent = '';
-                    console.error('Error fetching location:', error);
-                });
-            } else {
-                document.getElementById('ip-location').textContent = 'Geolocation is not supported by this browser';
-            }
-        }, 2000);
-    }, 10000); // 10 seconds in milliseconds
-</script>
+<div class="info-container">
+    <div class="ip-address" id="ip-address">=)</div>
+    <div class="location" id="ip-location"></div>
+</div>
+<script src="js/ESCAPE.js"></script>
 </body>
 </html>
