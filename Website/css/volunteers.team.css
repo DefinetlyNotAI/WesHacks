@@ -3,12 +3,14 @@ body {
     color: #fff;
     font-family: 'Roboto', sans-serif;
 }
+
 .volunteer-table {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
 .founder-section > div, .cofounder-section > div, .volunteer {
     flex: 1 1 calc(33.333% - 20px);
     margin: 10px;
@@ -19,6 +21,7 @@ body {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
 }
+
 .founder-section img, .cofounder-section img, .volunteer img {
     width: 100%;
     max-width: 256px;
@@ -27,9 +30,11 @@ body {
     object-fit: cover;
     border-radius: 10px;
 }
+
 h1, h2, h3, p {
     margin: 0 0 10px;
 }
+
 h1 {
     text-align: center;
     margin-bottom: 30px;

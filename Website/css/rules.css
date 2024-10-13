@@ -35,7 +35,7 @@ h2, h3, h4 {
 
 h2::after, h3::after, h4::after {
     content: '\f0dd';
-    font-family: FontAwesome,sans-serif;
+    font-family: FontAwesome, sans-serif;
     position: absolute;
     right: 20px;
     font-size: 18px;

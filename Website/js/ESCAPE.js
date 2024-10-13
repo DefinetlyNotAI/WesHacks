@@ -7,7 +7,7 @@ const canvasHeight = window.innerHeight;
 canvas.width = canvasWidth;
 canvas.height = canvasHeight;
 
-const letters = Array.from({ length: 256 }, () => 1);
+const letters = Array.from({length: 256}, () => 1);
 
 const draw = () => {
     ctx.fillStyle = 'rgba(0, 0, 0, 0.1)';
