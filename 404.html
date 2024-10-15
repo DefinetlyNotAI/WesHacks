@@ -5,7 +5,7 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
     <title>Error 404 - Page Not Found!</title>
-    <link href="/css/404.css" rel="stylesheet" type="text/css"/>
+    <link href="/Website/css/404.css" rel="stylesheet" type="text/css"/>
     <link href="/Website/images/Favicons/404.Favicon.png" rel="shortcut icon" type="image/x-icon"/>
 </head>
 
@@ -24,22 +24,6 @@
 </div>
 </body>
 
-<script>
-    const gameText = document.getElementById('game-text');
-    let colorValue = 0;
-    setTimeout(() => {
-        setInterval(() => {
-            colorValue = (colorValue + 1) % 256;
-            gameText.style.color = `rgb(255, ${Math.max(0, 255 - colorValue)}, ${Math.max(0, 255 - colorValue)})`;
-        }, 50);
-    }, 10000);
-    if (Math.random() < 0.05) {
-        const secretButton = document.createElement('a');
-        secretButton.className = 'button';
-        secretButton.href = '/Website/ESCAPE.html';
-        secretButton.textContent = 'Hmm how did this secret button get here?';
-        document.querySelector('.container').appendChild(secretButton);
-    }
-</script>
+<script src="/Website/js/404.js"></script>
 
 </html>
