@@ -11,7 +11,7 @@
 
 .btn:hover {
     background-color: #003eff;
-    color: #ffffff;
+    color: #ffffff !important;
     transform: scale(1.1);
 }
 
@@ -57,4 +57,14 @@
 .table-heading {
     background-color: #f3f3f3;
     font-weight: bold;
+}
+
+.heading_center h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 20px;
 }
