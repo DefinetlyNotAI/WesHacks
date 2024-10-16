@@ -8,13 +8,21 @@
     border: 1px solid #ccc;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
 }
 
 .popup.show {
     transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
 }
 
 .popup.hide {
     transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+}
+
+body.popup-active *:not(.popup):not(.popup *) {
+    filter: blur(5px);
+    overflow: hidden;
 }
