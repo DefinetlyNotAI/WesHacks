@@ -9,3 +9,4 @@ Disallow: /*.jpeg$
 Disallow: /*.gif$
 Disallow: /*.svg$
 Disallow: /*.pdf$
+Disallow: /*.docx$
