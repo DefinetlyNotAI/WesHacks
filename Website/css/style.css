@@ -210,7 +210,6 @@ a:focus {
     transition: all 0.3s;
     position: relative;
     border-radius: 5px;
-    transition: all 0.3s;
 }
 
 .custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
@@ -294,8 +293,7 @@ a:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 0 -5px;
-    margin-top: 25px;
+    margin: 25px -5px 0;
 }
 
 .slider_section .detail-box .btn-box a {
@@ -515,7 +513,7 @@ a:focus {
     padding: 10px 45px;
     background-color: #00bbf0;
     color: #ffffff;
-    border-radius: 0px;
+    border-radius: 0;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
     border: none;
@@ -624,7 +622,6 @@ a:focus {
     -webkit-transition: all .1s;
     transition: all .1s;
     margin-top: 45px;
-    background: -webkit-gradient(linear, left top, left bottom, from(#002759), to(#002b64));
     background: linear-gradient(to bottom, #002759, #002b64);
 }
 
@@ -706,7 +703,6 @@ a:focus {
     width: 100px;
     margin-bottom: -50px;
     margin-left: 25px;
-    position: relative;
 }
 
 .client_section .box .img-box img {
@@ -728,8 +724,6 @@ a:focus {
 }
 
 .client_section .box .client_id .client_info p {
-    margin-bottom: 0;
-    font-size: 15px;
     font-size: 14px;
     margin-bottom: 10px;
 }
@@ -763,7 +757,7 @@ a:focus {
     background-color: #ffffff;
     color: #000000;
     outline: none;
-    bottom: 0px;
+    bottom: 0;
     font-size: 24px;
     -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
