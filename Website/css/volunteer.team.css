@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Subtle background color */
+    color: #333;
+}
+
+h1, h2 {
+    color: #00BFA6; /* Green accent color */
+    text-align: center;
+}
+
+p {
+    color: #555;
+}
+
+/* Header Section */
+.header-container {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #fff; /* White text color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+.navbar .nav-link:hover {
+    color: #c0c0c0; /* Light gray color on hover */
+}
+
+/* Founder Section */
+.founders {
+    padding: 50px;
+    background-color: #fff;
+    
+}
+
+.founder-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns layout */
+    gap: 20px;
+    justify-content: center; /* Horizontally center the content */
+    /* Optional: Center vertically if needed */
+    align-items: center;
+}
+
+
+.profile-box {
+    background-color: #ffffff; /* Subtle background color */
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 20px;
+    opacity: 0; /* Initially hidden for the animation */
+    transform: translateY(30px); /* Slight upward movement */
+    transition: all 0.5s ease; /* Smooth transition */
+    width: 250px;
+    height: 350px; /* Ensure uniform box sizes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative; /* For ::before positioning */
+}
+
+.founder, .cofounder {
+    background-color: #e8f6f3;
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensures the image fits neatly */
+}
+
+.profile-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-text p {
+    margin: 5px 0;
+}
+
+/* Team Members Section */
+.team {
+    padding: 50px;
+    background-color: #f9fbfd;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Profile Box Initial State for Animation */
+.profile-box {
+    opacity: 0; /* Hidden initially */
+    transform: translateY(30px); /* Slight upward movement */
+    transition: all 0.5s ease;
+}
+
+/* When the element is visible, apply the animation */
+.profile-box.animate-visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Program Label (on top of each profile box) */
+.profile-box::before {
+    content: "Wes:Hack 24 ";
+    display: block;
+    background-color: #000;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 0 5px 0;
+    z-index: 1;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) { /* Adjust for screens 768px and smaller */
+    .navbar {
+        padding: 5px; /* Less padding for smaller screens */
+    }
+
+    .founder-grid {
+        flex-direction: column; /* Stack profiles vertically */
+        align-items: center; /* Center align the profiles */
+    }
+
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
+    }
+
+    .profile-box {
+        width: 80%; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to be flexible */
+        margin-bottom: 20px; /* Add spacing between boxes */
+    }
+}
+
+@media (max-width: 480px) { /* Adjust for screens 480px and smaller */
+    .navbar .navbar-brand {
+        font-size: 1.5rem; /* Larger brand name on small devices */
+    }
+
+    .navbar .nav-link {
+        font-size: 0.9rem; /* Smaller font for links */
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr; /* 1 column per row */
+    }
+
+    .profile-box {
+        width: 90%; /* Adjust width for very small screens */
+    }
+}
+@media (max-width: 768px) {
+    .founder-grid {
+        grid-template-columns: repeat(1, 1fr); /* Stack profiles in one column on small screens */
+    }
+}
+
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
+    font-weight: 600;
+}
