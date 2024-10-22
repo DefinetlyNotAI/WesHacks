@@ -54,3 +54,7 @@ ul {
     display: none;
     padding-left: 15px;
 }
+
+.content.show {
+    display: block;
+}
