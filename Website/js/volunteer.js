@@ -27,12 +27,12 @@ window.addEventListener('scroll', handleScroll);
 // Trigger the function initially to catch any elements already in view
 window.addEventListener('load', handleScroll);
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', function () {
     const profileBoxes = document.querySelectorAll('.animate-on-scroll');
     profileBoxes.forEach(box => {
         const boxTop = box.getBoundingClientRect().top;
         const windowHeight = window.innerHeight;
-        
+
         if (boxTop < windowHeight - 50) {
             box.classList.add('animate-visible');
         }

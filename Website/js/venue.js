@@ -1,4 +1,4 @@
-document.getElementById('downloadMOU').addEventListener('click', function() {
+document.getElementById('downloadMOU').addEventListener('click', function () {
     const message = `
         <div class="popup-content">
             <p>By downloading this Memorandum of Understanding (MOU), you agree to use it solely for informational purposes.</p>
@@ -59,12 +59,12 @@ document.getElementById('downloadMOU').addEventListener('click', function() {
         popup.classList.add('show');
     }, 10);
 
-    document.getElementById('confirmDownload').addEventListener('click', function() {
+    document.getElementById('confirmDownload').addEventListener('click', function () {
         window.location.href = 'downloadable/Memorandum of Understanding.docx';
         closePopup(popup);
     });
 
-    document.getElementById('cancelDownload').addEventListener('click', function() {
+    document.getElementById('cancelDownload').addEventListener('click', function () {
         closePopup(popup);
     });
 
@@ -74,6 +74,6 @@ document.getElementById('downloadMOU').addEventListener('click', function() {
         popup.addEventListener('transitionend', () => {
             document.body.removeChild(popup);
             document.body.classList.remove('popup-active');
-        }, { once: true });
+        }, {once: true});
     }
 });
