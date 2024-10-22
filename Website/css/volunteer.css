@@ -54,7 +54,7 @@ p {
 .profile-box {
     background-color: #ffffff; /* Subtle background color */
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
     padding: 20px;
     opacity: 0; /* Initially hidden for the animation */
     transform: translateY(30px); /* Slight upward movement */
@@ -96,9 +96,22 @@ p {
     background-color: #f9fbfd;
 }
 
-.team-grid {
+.team-grid-3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    grid-template-columns: repeat(4, 1fr); /* 4 columns per row by default */
+    gap: 20px;
+    justify-items: center;
+}
+
+@media (max-width: 768px) { /* Adjust for screens 768px and smaller */
+    .team-grid-3 {
+        grid-template-columns: 1fr; /* 1 column per row on mobile */
+    }
+}
+
+.team-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns per row */
     gap: 20px;
     justify-items: center;
 }
