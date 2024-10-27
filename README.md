@@ -50,6 +50,19 @@ To set up the project locally, follow these steps:
 
 - Founder: Shahm Najeeb
 - Co-Founder: Aban Ahmed
+- Members:
+    - Mustafa Moamen
+    - Jad Hadid
+    - Munotida Togara
+    - Mazen Ahmed
+    - Aon Alaa
+    - Mohamed Ezz Eldin
+    - Lara Elgharably
+    - Lana Doghmosh
+    - Dania Suliman
+    - Mishal Irfan
+    - Layal Melhem
+    - Rawan Shawir
 
 ## License
 
