@@ -1,12 +1,2 @@
 User-agent: *
-Disallow: /Website/login.html
-Disallow: /Website/volunteers.apply.html
-Disallow: /Website/volunteers.secret.html
-Disallow: /Website/volunteers.venue.html
-Disallow: /*.png$
-Disallow: /*.jpg$
-Disallow: /*.jpeg$
-Disallow: /*.gif$
-Disallow: /*.svg$
 Disallow: /*.pdf$
-Disallow: /*.docx$
