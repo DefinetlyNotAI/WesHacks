@@ -10,6 +10,7 @@
     <!-- Site Metas -->
     <link href="Website/images/Favicons/Machine.hand.png" rel="shortcut icon" type="">
     <link href="Website/css/favicon.css" rel="stylesheet" type="text/css"/>
+    <script src="Website/js/custom.js"></script>
     <script src="Website/js/favicon.js"></script>
 
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -123,8 +124,6 @@
 
     <!-- Custom styles for this template -->
     <link href="Website/css/style.css" rel="stylesheet"/>
-    <!-- responsive style -->
-    <link href="Website/css/responsive.css" rel="stylesheet"/>
 
     <style>
         .btn:hover {
@@ -132,6 +131,10 @@
             color: #ffffff;
         }
     </style>
+
+    <!-- responsive style -->
+    <link href="Website/css/responsive.css" rel="stylesheet"/>
+
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -147,7 +150,7 @@
     </script>
 </head>
 
-<body>
+<body onload="showPopup()">
 
 <div class="hero_area" style="height: auto; width: auto; padding:0;">
     <div class="hero_bg_box">
@@ -346,6 +349,10 @@
 <!-- JavaScript Files (Make sure to include them in this order) -->
 <!-- jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Include Owl Carousel CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"/>
+<!-- Include Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <!-- Popper.js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
 <!-- Bootstrap JavaScript -->
