@@ -4,3 +4,17 @@ $(document).ready(function () {
         $(this).next('.content').slideToggle(400);
     });
 });
+$(document).ready(function () {
+    if (window.location.hash) {
+        const target = $(window.location.hash);
+        if (target.length) {
+            target.addClass('active');
+            target.next('.content').slideDown(400);
+        }
+    }
+});
+
+function toggleContent(element) {
+    $(element).toggleClass('active');
+    $(element).next('.content').slideToggle(400);
+}
