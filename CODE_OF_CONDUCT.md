@@ -112,6 +112,11 @@ individual, or aggression toward or disparagement of classes of individuals.
 **Consequence**: A permanent ban from any sort of public interaction within
 the community.
 
+## Sanction Guidelines
+
+Anything specified previously can be overwritten or rejected by final say, 
+as well as the website's clearer [sanctions](https://weshack.me/Website/rules.html#Sanctions) guidelines.
+
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage],
