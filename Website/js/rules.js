@@ -4,6 +4,7 @@ $(document).ready(function () {
         $(this).next('.content').slideToggle(400);
     });
 });
+
 $(document).ready(function () {
     if (window.location.hash) {
         const target = $(window.location.hash);
@@ -13,8 +14,3 @@ $(document).ready(function () {
         }
     }
 });
-
-function toggleContent(element) {
-    $(element).toggleClass('active');
-    $(element).next('.content').slideToggle(400);
-}
