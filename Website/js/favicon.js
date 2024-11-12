@@ -7,6 +7,21 @@ function updateFavicon() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const currentUrl = window.location.href;
+    const urlPath = window.location.pathname;
+
+    if (urlPath.endsWith('.html')) {
+        if (urlPath.endsWith('index.html')) {
+            const newUrl = currentUrl.replace('/index.html', '');
+            window.location.href = newUrl;
+        } else {
+            const newUrl = currentUrl.replace('.html', '');
+            window.location.href = newUrl;
+        }
+    }
+});
+
 // Initial check
 updateFavicon();
 
