@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentUrl = window.location.href;
     const urlPath = window.location.pathname;
 
-    if (urlPath.endsWith('.html')) {
+    if (currentUrl.includes('weshack.me') && urlPath.endsWith('.html')) {
         if (urlPath.endsWith('index.html')) {
             const newUrl = currentUrl.replace('/index.html', '');
             window.location.href = newUrl;
