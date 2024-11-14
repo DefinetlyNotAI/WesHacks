@@ -1,9 +1,11 @@
 function updateFavicon() {
     const favicon = document.getElementById('favicon');
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        favicon.classList.add('invert');
-    } else {
-        favicon.classList.remove('invert');
+    if (favicon) {
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            favicon.classList.add('invert');
+        } else {
+            favicon.classList.remove('invert');
+        }
     }
 }
 
