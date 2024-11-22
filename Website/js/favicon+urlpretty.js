@@ -22,6 +22,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const currentUrl = window.location.href;
+    const urlPath = window.location.pathname;
+
+    if (currentUrl.includes('weshack.me') && !urlPath.startsWith('/Website/')) {
+        window.location.href = currentUrl.replace('weshack.me/', 'weshack.me/Website/');
+    }
+});
+
 // Initial check
 updateFavicon();
 
