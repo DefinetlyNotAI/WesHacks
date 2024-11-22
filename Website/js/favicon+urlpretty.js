@@ -26,8 +26,23 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentUrl = window.location.href;
     const urlPath = window.location.pathname;
 
-    if (currentUrl.includes('weshack.me') && !urlPath.startsWith('/Website/')) {
-        window.location.href = currentUrl.replace('weshack.me/', 'weshack.me/Website/');
+    const redirects = {
+        '/rules': '/Website/rules',
+        '/volunteers': '/Website/volunteers',
+        '/faq': '/Website/faq',
+        '/sponsors': '/Website/sponsors',
+        '/schedule': '/Website/schedule',
+        '/venue': '/Website/venue',
+        '/prizes': '/Website/prizes'
+    };
+
+    if (currentUrl.includes('weshack.me')) {
+        for (const [key, value] of Object.entries(redirects)) {
+            if (urlPath === key) {
+                window.location.href = currentUrl.replace(key, value);
+                break;
+            }
+        }
     }
 });
 
