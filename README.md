@@ -49,14 +49,14 @@ To set up the project locally, follow these steps:
 ## Team
 
 - Founder: Shahm Najeeb
-- Co-Founder: Aban Ahmed
+- Co-Founder: Munotida Togara
 - Members:
     - Mustafa Moamen
     - Jad Hadid
-    - Munotida Togara
     - Mazen Ahmed
     - Aon Alaa
     - Mohamed Ezz Eldin
+    - Maryam Jandali
     - Lara Elgharably
     - Lana Doghmosh
     - Dania Suliman
