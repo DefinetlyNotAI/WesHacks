@@ -9,12 +9,3 @@ setTimeout(() => {
         }
     }, 50);
 }, 10000);
-
-
-if (Math.random() < 0.05) {
-    const secretButton = document.createElement('a');
-    secretButton.className = 'button';
-    secretButton.href = '/Website/ESCAPE.html';
-    secretButton.textContent = 'Hmm how did this secret button get here?';
-    document.querySelector('.container').appendChild(secretButton);
-}
