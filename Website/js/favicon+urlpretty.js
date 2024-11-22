@@ -27,13 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const urlPath = window.location.pathname;
 
     const redirects = {
-        '/rules': '/Website/rules',
-        '/volunteers': '/Website/volunteers',
-        '/faq': '/Website/faq',
-        '/sponsors': '/Website/sponsors',
-        '/schedule': '/Website/schedule',
-        '/venue': '/Website/venue',
-        '/prizes': '/Website/prizes'
+        '/Website/rules': '/rules',
+        '/Website/volunteers': '/volunteers',
+        '/Website/faq': '/faq',
+        '/Website/sponsors': '/sponsors',
+        '/Website/schedule': '/schedule',
+        '/Website/venue': '/venue',
+        '/Website/prizes': '/prizes'
     };
 
     if (currentUrl.includes('weshack.me')) {
