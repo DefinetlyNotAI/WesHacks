@@ -22,6 +22,29 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const currentUrl = window.location.href;
+    const urlPath = window.location.pathname;
+
+    const redirects = {
+        '/Website/rules': '/rules',
+        '/Website/volunteers': '/volunteers',
+        '/Website/faq': '/faq',
+        '/Website/sponsors': '/sponsors',
+        '/Website/schedule': '/schedule',
+        '/Website/venue': '/venue',
+        '/Website/prizes': '/prizes'
+    };
+
+    for (const [key, value] of Object.entries(redirects)) {
+        if (urlPath === key) {
+            window.location.href = currentUrl.replace(key, value);
+            break;
+        }
+    }
+
+});
+
 // Initial check
 updateFavicon();
 
