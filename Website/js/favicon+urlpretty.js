@@ -13,19 +13,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentUrl = window.location.href;
     const urlPath = window.location.pathname;
 
-    if (currentUrl.includes('weshack.me') && urlPath.endsWith('.html')) {
-        if (urlPath.endsWith('index.html')) {
-            window.location.href = currentUrl.replace('/index.html', '');
-        } else {
-            window.location.href = currentUrl.replace('.html', '');
-        }
-    }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const currentUrl = window.location.href;
-    const urlPath = window.location.pathname;
-
     const redirects = {
         '/Website/rules': '/rules',
         '/Website/volunteers': '/volunteers',
@@ -35,6 +22,14 @@ document.addEventListener('DOMContentLoaded', function() {
         '/Website/venue': '/venue',
         '/Website/prizes': '/prizes'
     };
+
+    if (currentUrl.includes('weshack.me') && urlPath.endsWith('.html')) {
+        if (urlPath.endsWith('index.html')) {
+            window.location.href = currentUrl.replace('/index.html', '');
+        } else {
+            window.location.href = currentUrl.replace('.html', '');
+        }
+    }
 
     for (const [key, value] of Object.entries(redirects)) {
         if (urlPath === key) {
