@@ -19,13 +19,6 @@ WesHacks is a web-based platform designed to manage and display information rela
 This repository contains the source code for the hackathon's website, focusing on providing participants with up-to-date
 information, schedules, and resources.
 
-## Technologies Used
-
-- HTML (72.0%)
-- SCSS (8.9%)
-- CSS (10.3%)
-- JavaScript (8.8%)
-
 ## Features
 
 - Event Schedules: Detailed timelines for hackathon events.
