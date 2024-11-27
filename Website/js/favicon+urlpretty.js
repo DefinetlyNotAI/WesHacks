@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentUrl = window.location.href;
     const urlPath = window.location.pathname;
 
+    if (currentUrl.includes('weshack.me') && urlPath.endsWith('.html')) {
+        if (urlPath.endsWith('index.html')) {
+            window.location.href = currentUrl.replace('/index.html', '');
+        } else {
+            window.location.href = currentUrl.replace('.html', '');
+        }
+    }
+
     const redirects = {
         '/Website/rules': '/rules',
         '/Website/volunteers': '/volunteers',
@@ -22,18 +30,9 @@ document.addEventListener('DOMContentLoaded', function() {
         '/Website/venue': '/venue',
         '/Website/prizes': '/prizes'
     };
-
-    if (currentUrl.includes('weshack.me') && urlPath.endsWith('.html')) {
-        if (urlPath.endsWith('index.html')) {
-            window.location.href = currentUrl.replace('/index.html', '');
-        } else {
-            window.location.href = currentUrl.replace('.html', '');
-        }
-    }
-
     for (const [key, value] of Object.entries(redirects)) {
-        if (urlPath === key) {
-            window.location.href = currentUrl.replace(key, value);
+        if (urlPath.startsWith('/Website')) {
+            window.location.href = currentUrl.replace('/Website', '');
             break;
         }
     }
@@ -45,4 +44,4 @@ updateFavicon();
 
 // Listen for changes in the color scheme
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFavicon);
-    
+
