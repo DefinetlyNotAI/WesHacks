@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (currentUrl.includes('weshack.me')) {
         if (urlPath.includes('.html')) {
             window.location.href = currentUrl.replace('.html', '');
-        } else if (urlPath.endsWith('/index')) {
+        }
+        if (urlPath.endsWith('/index')) {
             window.location.href = currentUrl.replace('/index', '');
         }
     }
