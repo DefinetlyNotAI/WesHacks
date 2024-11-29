@@ -9,6 +9,20 @@ function updateFavicon() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const currentUrl = window.location.href;
+    const urlPath = window.location.pathname;
+
+    if (currentUrl.includes('weshack.me')) {
+        if (urlPath.includes('.html')) {
+            window.location.href = currentUrl.replace('.html', '');
+        } else if (urlPath.endsWith('/index')) {
+            window.location.href = currentUrl.replace('/index', '');
+        }
+    }
+});
+
+
 // Initial check
 updateFavicon();
 
