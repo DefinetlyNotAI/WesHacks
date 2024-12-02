@@ -96,6 +96,11 @@ p {
     background-color: #f9fbfd;
 }
 
+.team-sec {
+    padding: 20px;
+    background-color: #f9fbfd;
+}
+
 .team-grid-3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns per row by default */
