@@ -101,6 +101,26 @@ p {
     background-color: #f9fbfd;
 }
 
+.team-grid-1 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 4 columns per row by default */
+    gap: 15px;
+    justify-items: center;
+}
+
+@media (max-width: 768px) { /* Adjust for screens 768px and smaller */
+    .team-grid-1 {
+        grid-template-columns: 1fr; /* 1 column per row on mobile */
+    }
+}
+
+.team-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+    gap: 20px;
+    justify-items: center;
+}
+
 .team-grid-3 {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 columns per row by default */
@@ -114,12 +134,6 @@ p {
     }
 }
 
-.team-grid-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
-    gap: 20px;
-    justify-items: center;
-}
 
 @media (max-width: 768px) { /* Adjust for screens 768px and smaller */
     .team-grid-2 {
