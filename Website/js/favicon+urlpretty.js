@@ -13,13 +13,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentUrl = window.location.href;
     const urlPath = window.location.pathname;
 
-    if (currentUrl.includes('weshack.me')) {
-        if (urlPath.includes('.html')) {
+    if (urlPath.includes('.html')) {
             window.location.href = currentUrl.replace('.html', '');
-        }
-        if (urlPath.endsWith('/index')) {
+    }
+    if (urlPath.endsWith('/index')) {
             window.location.href = currentUrl.replace('/index', '');
-        }
     }
 });
 
