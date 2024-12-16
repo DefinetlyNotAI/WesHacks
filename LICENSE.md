@@ -2,7 +2,7 @@
 
 **Copyright © 2024 Shahm Najeeb. All rights reserved.**
 
-This License Agreement ("Agreement") is a legal contract between the User of the website, Wesgreen International School ("You"), and Shahm Najeeb ("Licensor") regarding the use of the Wes:Hack event concept, software, code, documentation, and all associated materials ("Materials") developed and provided by Licensor. By accessing, using, or attempting to use the Materials, You agree to be bound by the terms of this Agreement. If You do not agree to these terms, You are not permitted to use the Materials.
+This License Agreement ("Agreement") is a legal contract between the User of the website, Wesgreen International School ("You"), and Mustafa Moamen, Layal Melhem, Mishal Irfan ("Licensor") regarding the use of the Wes:Hack event concept, software, code, documentation, and all associated materials ("Materials") developed and provided by Licensor. By accessing, using, or attempting to use the Materials, You agree to be bound by the terms of this Agreement. If You do not agree to these terms, You are not permitted to use the Materials.
 
 ### 1. Grant of License
 Licensor grants You a limited, non-exclusive, non-transferable, non-sublicensable license to access and use the Materials solely for personal, non-commercial purposes. Any other use of the Materials is strictly prohibited.
